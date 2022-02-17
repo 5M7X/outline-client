@@ -8,6 +8,7 @@
     "clean": "rm -rf build node_modules www platforms plugins",
     "lint": "npm run lint:ts",
     "lint:ts": "tslint 'src/**/*.ts'",
+    "postinstall": "node ./scripts/post_npm_install.mjs",
     "reset": "npm run clean && npm ci"
   },
   "comments": {
@@ -80,6 +81,7 @@
     "cordova-plugin-outline": "file:cordova-plugin-outline",
     "cordova-webintent": "github:cordova-misc/cordova-webintent#v2.0.0",
     "css-loader": "^5.0.1",
+    "download": "^8.0.0",
     "electron": "^11.5.0",
     "electron-builder": "^22.9.1",
     "electron-icon-maker": "^0.0.4",
